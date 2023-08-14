@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.ventas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.venta {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.fecha {
+    font-weight: bold;
+}
+
+.monto {
+    color: #22e300;
+}
+
+.cliente {
+    color: #007bff;
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el menú */
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    list-style: none;
+    padding: 2;
+    margin-top: 3px;
+    justify-content: center;
+}
+
+.menu a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(221, 224, 222, 0.87);
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.menu li:hover {
+    background-color: #555;
+}
+
+.menu a:hover {
+    color: #b3b3b3;
+}
+.nav {
+    display: flex;
+}
+
