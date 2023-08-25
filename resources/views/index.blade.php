@@ -14,8 +14,8 @@
             <h1>Lista de Ventas</h1>
             <nav class="menu">
                 <ul>
-                    <a href="{{asset('img/iconoinicio.jpg')}}">Inicio</a>
-                    <a href="#">Productos</a>
+                    <a href="">Inicio</a>
+                    <a href="{{route('productos.index')}}">Productos</a>
                     <a href="#">Servicios</a>
                     <a href="#">Contacto</a>
                 </ul>
@@ -25,19 +25,20 @@
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
         <section class="ventas">
             <div class="venta">
-                <span class="fecha">2023-08-11</span>
-                <span class="monto">$150.00</span>
-                <span class="cliente">Cliente A</span>
+                <img src="{{ asset('img/esmeralda.jpg') }}" alt="Imagen 1">
+                <h1> Bienvenidos a Centro Esmeralda, una empresa apasionada por la belleza
+                     y el misterio de las esmeraldas. Desde nuestra fundación, nos hemos dedicado
+                     a explorar, adquirir y ofrecer las esmeraldas más excepcionales y de la más
+                     alta calidad a los amantes de las gemas en todo el mundo.</h1> 
+                     <img src="{{ asset('img/esmeralda.jpg') }}" alt="Imagen 1">
             </div>
             <div class="venta">
-                <span class="fecha">2023-08-10</span>
-                <span class="monto">$220.50</span>
-                <span class="cliente">Cliente B</span>
-            </div>
-            <!-- Agrega más ventas aquí -->
-        </section>
-    </body>
-    </html>
-    
+                <img src="{{ asset('img/esmeralda.jpg') }}" alt="Imagen 1">
+                <h1> Bienvenidos a Centro Esmeralda, una empresa apasionada por la belleza
+                     y el misterio de las esmeraldas. Desde nuestra fundación, nos hemos dedicado
+                     a explorar, adquirir y ofrecer las esmeraldas más excepcionales y de la más
+                     alta calidad a los amantes de las gemas en todo el mundo.</h1>   
+                     <img src="{{ asset('img/esmeralda.jpg') }}" alt="Imagen 1"> 
+            </div>            
 </body>
 </html>

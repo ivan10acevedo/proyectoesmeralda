@@ -16,6 +16,7 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 2rem;
+    text-align: center;
 }
 
 .venta {
@@ -77,4 +78,10 @@ body, ul {
 .nav {
     display: flex;
 }
-
+.productos{
+margin:10px ;
+border: 5px 5px 5px 5px ;
+text-align: center;
+height: 100px;
+width: 100px;
+}
