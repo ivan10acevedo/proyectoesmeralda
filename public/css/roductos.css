@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafaca;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-image:url('../img/fondo.jpg');
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .menu {
+    margin-top: 1rem;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  /* Estilos de la sección de productos */
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .cont {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .cont img {
+    margin-top: 1rem;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .cont a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para enlaces */
+  a {
+    color: #fb0101;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #086300;
+  }
+  
+  .productos{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  }
+  
+  .cont{
+      margin: 40px;
+      display: grid;
+      justify-content: center;
+      width: auto;
+      height: auto;
+  }
+  .contenido{
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}

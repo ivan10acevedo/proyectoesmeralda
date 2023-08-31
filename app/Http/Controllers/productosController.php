@@ -12,10 +12,30 @@ class productosController extends Controller
      */
     public function index()
     {
-        $productos=productos::orderBy('nombre','ASC')->paginate(5);
+        $productos=productos::orderBy('nombre','ASC')->get();
         return view('productos',['productos'=>$productos]);
     }
-
+    public function catalogo($id)
+    {
+        
+    
+        // Si deseas obtener todos los productos ordenados por nombre
+        $caracteristicas = productos::orderBy('nombre', 'ASC')
+        ->where('codigoproducto', '=', $id)
+        ->get();
+        $productos=productos::orderBy('nombre','ASC')->get();
+    
+        return view('caracteristicas', ['caracteristicas' => $caracteristicas,'productos'=>$productos]);
+    }
+    public function categoria($id)
+    {
+        $caracteristicas = productos::where('codigocategoria', '=', $id)->get();
+        $productos = productos::orderBy('nombre', 'ASC')->get();
+    
+        return view('productos', ['productos' => $caracteristicas]);
+    }
+    
+    
     /**
      * Show the form for creating a new resource.
      */
