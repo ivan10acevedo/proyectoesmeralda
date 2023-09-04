@@ -1,4 +1,4 @@
-<h1>Lista de Ventas</h1>
+<h1>CentroEsmeralda</h1>
 <nav class="menu">
     <div class="todo">
         <div class="otion">
@@ -14,9 +14,6 @@
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
-        </div>
-        <div class="log">
-            @include('layouts/app')
         </div>
     </div>
 </nav>

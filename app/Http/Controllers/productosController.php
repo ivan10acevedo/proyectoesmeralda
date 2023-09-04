@@ -34,8 +34,22 @@ class productosController extends Controller
     
         return view('productos', ['productos' => $caracteristicas]);
     }
+    public function compra($id)
+    {
+        $comra = productos::where('codigoproducto', '=', $id)->get();
+        return view('comra', ['comra' => $comra]);
+    }
+    public function buscar(Request $request)
+    {
+        $query = $request->input('q');
+        $productos = productos::where('nombre', 'like', "%$query%")
+            ->orWhere('tipotalla', 'like', "%$query%")
+            ->get();
     
+        return view('productos', compact('productos'));
+    }
     
+
     /**
      * Show the form for creating a new resource.
      */

@@ -10,13 +10,21 @@
     <title>Lista de Ventas</title>
     <link rel="stylesheet" href="{{ asset('css/roductos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/caracteristicas.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/hola.css') }}">
 </head>
 
 <header>
     @include('menu')
 </header>
 
-<body>
+<body> 
+    <div class="buscador">
+        <form action="/buscar" method="GET">
+            <input type="text" name="q" placeholder="Buscar productos">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+
     <div class="productos">
         @forelse($productos as $fila)
             <div class="cont">
@@ -29,5 +37,15 @@
         @endforelse
     </div>
 </body>
+<style>
+    .buscador {
+    text-align: center; 
+    margin-top: 20px; 
+}
 
+.buscador form {
+    display: inline-block; 
+}
+
+</style>
 </html>

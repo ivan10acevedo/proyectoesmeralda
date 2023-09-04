@@ -70,15 +70,7 @@
   }
   
   /* Estilos para enlaces */
-  a {
-    color: #fb0101;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  a:hover {
-    color: #086300;
-  }
+
   
   .productos{
   display: grid;
